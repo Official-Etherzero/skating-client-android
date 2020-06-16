@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_seting_grop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".modules.user.Seting.UserSetingActivity">
+
+    <include layout="@layout/title_project" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/set_language_ll"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/language_setting"
+            android:textColor="@color/zt_black"
+            android:textSize="@dimen/zt_15sp"/>
+        <TextView
+            android:id="@+id/set_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zt_black"
+            android:textSize="@dimen/zt_13sp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jinru"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/set_sales_unit_ll"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sales_unit"
+            android:textColor="@color/zt_black"
+            android:textSize="@dimen/zt_15sp"/>
+        <TextView
+            android:id="@+id/set_sales_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zt_black"
+            android:textSize="@dimen/zt_13sp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jinru"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/set_version_number_ll"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/version_number"
+            android:textColor="@color/zt_black"
+            android:textSize="@dimen/zt_15sp"/>
+        <TextView
+            android:id="@+id/set_version_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zt_black"
+            android:textSize="@dimen/zt_13sp"
+            android:textStyle="bold"/>
+        <View
+            android:id="@+id/new_version_number_lab"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/dot_red"
+            android:visibility="gone"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jinru"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wallet_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="vertical"
+    tools:context=".modules.walletoperation.wallet.WalletActivity">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/asset_card"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/wallet_title_rl"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="17dp">
+
+                <ImageView
+                    android:id="@+id/wallet_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/back_white" />
+
+                <TextView
+                    android:id="@+id/wallet_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/zt_17sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <com.etzSharding.view.MText
+                android:id="@+id/balance_secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                app:customTFont="BEBAS__.ttf" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.etzSharding.view.MText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="≈"
+                    android:textColor="@color/zt_d7ffe8"
+                    android:textSize="@dimen/zt_13sp" />
+
+                <com.etzSharding.view.MText
+                    android:id="@+id/balance_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/zt_d7ffe8"
+                    android:textSize="@dimen/zt_13sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.etzSharding.view.MText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/transfer_logs"
+            android:textColor="@color/zt_black"
+            android:textSize="@dimen/zt_22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recycler_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_toolbar_layout1"
+        android:layout_below="@+id/toolbar_layout"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.etzSharding.view.MText
+                android:id="@+id/log_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Search.all"
+                android:textColor="@color/tab_text_color"
+                android:textSize="@dimen/zt_13sp"
+                app:customTFont="CircularPro-Book.otf" />
+
+            <com.etzSharding.view.MText
+                android:id="@+id/log_receive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Search.received"
+                android:textColor="@color/tab_text_color"
+                android:textSize="@dimen/zt_13sp"
+                app:customTFont="CircularPro-Book.otf" />
+
+            <com.etzSharding.view.MText
+                android:id="@+id/log_send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Search.sent"
+                android:textColor="@color/tab_text_color"
+                android:textSize="@dimen/zt_13sp"
+                app:customTFont="CircularPro-Book.otf" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tx_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_above="@id/bottom_toolbar_layout1"
+        android:background="@color/line"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_toolbar_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:elevation="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="22dp"
+        android:weightSum="2">
+
+
+        <com.etzSharding.view.MText
+            android:id="@+id/send_button"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_lu_huang"
+            android:gravity="center"
+            android:text="@string/Button.send"
+            android:textColor="@color/zt_lu"
+            android:textSize="14sp"
+            app:customTFont="CircularPro-Bold.otf" />
+
+        <com.etzSharding.view.MText
+            android:id="@+id/receive_button"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="11dp"
+            android:layout_weight="1"
+            android:background="@drawable/create_wallet_enable_btn_bg_shape"
+            android:gravity="center"
+            android:text="@string/Button.receive"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:customTFont="CircularPro-Bold.otf" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

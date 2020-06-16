@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".modules.dot.MyNode.MyNodeActivity">
+
+    <include layout="@layout/title_project" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@mipmap/gerenjiedian_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/node_total_oreward"
+            android:textColor="@color/zt_60fff"
+            android:textSize="@dimen/zt_13sp" />
+
+        <com.etzSharding.view.MText
+            android:id="@+id/jiedian_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_32sp"
+            app:customTFont="BEBAS__.ttf" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/node_total_lab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/node_total"
+                android:textColor="@color/zt_60fff"
+                android:textSize="@dimen/zt_13sp"
+                app:layout_constraintEnd_toStartOf="@+id/view7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/node_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/view7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/node_total_lab" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/node_zr_output_lab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/node_zr_output"
+                android:textColor="@color/zt_60fff"
+                android:textSize="@dimen/zt_13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/node_zr_output"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view7"
+                app:layout_constraintTop_toBottomOf="@+id/node_zr_output_lab" />
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_node_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:clipToPadding="false"
+            android:paddingBottom="80dp" />
+
+        <TextView
+            android:id="@+id/my_add_node"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="22dp"
+            android:background="@drawable/bg_lu_huang"
+            android:gravity="center"
+            android:text="@string/my_node_add"
+            android:textColor="@color/zt_lu"
+            android:textSize="@dimen/zt_15sp"
+            android:visibility="visible" />
+    </FrameLayout>
+</LinearLayout>

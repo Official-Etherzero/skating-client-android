@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:C.\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rpsdk-4.0.0.aar\9402c0389627f0d989c71d82b0a576e3:unspecified@jar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rpsdk-4.0.0.aar/9402c0389627f0d989c71d82b0a576e3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rpsdk-4.0.0.aar/9402c0389627f0d989c71d82b0a576e3/jars/libs/r-classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rpsdk-4.0.0.aar/9402c0389627f0d989c71d82b0a576e3/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

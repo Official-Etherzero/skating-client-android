@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".modules.dot.Team.TeamNodeActivity">
+
+    <include layout="@layout/title_project" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@mipmap/tuanduijiedian"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/node_total_oreward"
+                android:textColor="@color/zt_80fff"
+                android:textSize="@dimen/zt_13sp" />
+
+            <com.etzSharding.view.MText
+                android:id="@+id/team_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_32sp"
+                app:customTFont="BEBAS__.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/team_personal_num"
+                        android:textColor="@color/zt_80fff"
+                        android:textSize="@dimen/zt_11sp" />
+
+                    <TextView
+                        android:id="@+id/team_personal_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/zt_fff"
+                        android:textSize="@dimen/zt_13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/team_ztjl"
+                        android:textColor="@color/zt_80fff"
+                        android:textSize="@dimen/zt_11sp" />
+
+                    <TextView
+                        android:id="@+id/team_ztjl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/zt_fff"
+                        android:textSize="@dimen/zt_13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/team_node_num"
+                        android:textColor="@color/zt_80fff"
+                        android:textSize="@dimen/zt_11sp" />
+
+                    <TextView
+                        android:id="@+id/team_node_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/zt_fff"
+                        android:textSize="@dimen/zt_13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/team_node_zrjl"
+                        android:textColor="@color/zt_80fff"
+                        android:textSize="@dimen/zt_11sp" />
+
+                    <TextView
+                        android:id="@+id/team_zrjl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/zt_fff"
+                        android:textSize="@dimen/zt_13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/team_jlmx"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/dot_jlmx_bg"
+            android:gravity="center"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:text="@string/team_node_jlmx"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_12sp" />
+
+        <TextView
+            android:id="@+id/team_leve"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/team_leve_bg"
+            android:gravity="center"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="#FC9D3D"
+            android:textSize="@dimen/zt_11sp"
+            android:textStyle="italic" />
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/team_node_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="40dp" />
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/node_item_cl"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:background="@mipmap/chuji">
+
+        <TextView
+            android:id="@+id/node_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/primary_node"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/node_snsyl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="120%"
+            android:textColor="#FFE993"
+            android:textSize="@dimen/zt_20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/node_class"
+            app:layout_constraintTop_toBottomOf="@+id/node_class" />
+
+        <TextView
+            android:id="@+id/node_snsyl_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/first_year_yield"
+            android:textColor="#FFE993"
+            android:textSize="@dimen/zt_11sp"
+            app:layout_constraintStart_toStartOf="@+id/node_snsyl"
+            app:layout_constraintTop_toBottomOf="@+id/node_snsyl" />
+
+        <TextView
+            android:id="@+id/node_cycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1080天"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/node_snsyl"
+            app:layout_constraintStart_toStartOf="@+id/node_cycle_lab" />
+
+        <TextView
+            android:id="@+id/node_cycle_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:text="@string/node_cycle"
+            android:textColor="@color/zt_60fff"
+            android:textSize="@dimen/zt_11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/node_snsyl_lab"
+            app:layout_constraintStart_toEndOf="@+id/node_snsyl_lab" />
+
+        <TextView
+            android:id="@+id/node_sj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="27dp"
+            android:text="1080 ETZ"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/node_snsyl"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/node_sj_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/node_price"
+            android:textColor="@color/zt_60fff"
+            android:textSize="@dimen/zt_11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/node_snsyl_lab"
+            app:layout_constraintEnd_toEndOf="@+id/node_sj" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

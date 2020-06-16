@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/jiedian"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp">
+
+                    <com.etzSharding.view.MText
+                        android:id="@+id/jiedian_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/zt_fff"
+                        android:textSize="@dimen/zt_36sp"
+                        app:customTFont="BEBAS__.ttf" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/jiedian_total"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_toEndOf="@+id/jiedian_total"
+                        android:text="@string/Etz"
+                        android:textColor="@color/zt_fff"
+                        android:textSize="@dimen/zt_18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/jiedian_cz"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/dot_cz_btn_bg"
+                        android:gravity="center"
+                        android:text="@string/recharge"
+                        android:textColor="@color/zt_fff"
+                        android:textSize="@dimen/zt_14sp" />
+
+                    <TextView
+                        android:id="@+id/jiedian_tx"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="40dp"
+                        android:background="@drawable/dot_cz_btn_bg"
+                        android:gravity="center"
+                        android:text="@string/withdraw"
+                        android:textColor="@color/zt_fff"
+                        android:textSize="@dimen/zt_14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dot_ctmx"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/dot_cz_btn_bg"
+                android:gravity="center"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:text="@string/node_ctmx"
+                android:textColor="@color/zt_fff"
+                android:textSize="@dimen/zt_12sp" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/jiedian_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/banner" />
+
+        <ImageView
+            android:id="@+id/beginner_tutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/dot_beginner_tutorial"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/dot_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/geren">
+
+                <TextView
+                    android:id="@+id/personal_node_lab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/personal_node"
+                    android:textColor="@color/zt_fff"
+                    android:textSize="@dimen/zt_12sp" />
+
+                <TextView
+                    android:id="@+id/personal_node_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/personal_node_lab"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="40dp"
+                    android:text="--"
+                    android:textColor="@color/zt_fff"
+                    android:textSize="@dimen/zt_30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/personal_node_output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/personal_node_num"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/personal_node_zr_output"
+                    android:textColor="@color/zt_fff"
+                    android:textSize="@dimen/zt_11sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/dot_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-7dp"
+                android:background="@mipmap/tuandui">
+
+                <TextView
+                    android:id="@+id/team_node_lab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/team_node"
+                    android:textColor="@color/zt_fff"
+                    android:textSize="@dimen/zt_12sp" />
+
+                <TextView
+                    android:id="@+id/team_node_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/team_node_lab"
+                    android:layout_centerHorizontal="true"
+                    android:text="--"
+                    android:textColor="@color/zt_fff"
+                    android:textSize="@dimen/zt_30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/team_node_output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/team_node_num"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/team_node_zr_oreward"
+                    android:textColor="@color/zt_fff"
+                    android:textSize="@dimen/zt_11sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/dot_add_node"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/zengjia"
+                android:gravity="center"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_node"
+                    android:textColor="@color/zt_fff"
+                    android:textSize="@dimen/zt_18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/dot_invite_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-7dp"
+                android:background="@mipmap/yaoqing"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/invite_friends"
+                    android:textColor="@color/zt_fff"
+                    android:textSize="@dimen/zt_18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="立减手续费5%"
+                    android:textColor="@color/zt_fff"
+                    android:textSize="@dimen/zt_11sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

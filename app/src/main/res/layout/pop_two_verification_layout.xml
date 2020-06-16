@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:id="@+id/signal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/bg_pop_two_verification"
+        android:clickable="true"
+        android:isScrollContainer="false"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/Security_verification"
+                android:textColor="@color/zt_black_100"
+                android:textSize="@dimen/zt_15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pop_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/base_edge"
+                android:text="@string/cancel"
+                android:textColor="@color/zt_black_50"
+                android:textSize="@dimen/zt_13sp" />
+
+        </RelativeLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/pop_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_edge"
+            android:paddingRight="@dimen/base_edge"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/pop_email_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/zt_black_100"
+                android:textSize="@dimen/zt_13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/pop_mail_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="@string/find_email_auth"
+                android:inputType="number"
+                android:textColor="@color/zt_black_100"
+                android:textSize="@dimen/zt_13sp"
+                app:layout_constraintStart_toStartOf="@+id/pop_email_acc"
+                app:layout_constraintTop_toBottomOf="@+id/pop_email_acc" />
+
+            <TextView
+                android:id="@+id/pop_eamail_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/send"
+                android:textColor="@color/zt_main"
+                android:textSize="@dimen/zt_13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/pop_mail_code"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pop_mail_code" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/pop_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_edge"
+            android:paddingRight="@dimen/base_edge"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/pop_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/zt_black_100"
+                android:textSize="@dimen/zt_13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/pop_mobile_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="@string/msg_verification"
+                android:inputType="number"
+                android:textColor="@color/zt_black_100"
+                android:textSize="@dimen/zt_13sp"
+                app:layout_constraintStart_toStartOf="@+id/pop_phone"
+                app:layout_constraintTop_toBottomOf="@+id/pop_phone" />
+
+            <TextView
+                android:id="@+id/pop_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/send"
+                android:textColor="@color/zt_main"
+                android:textSize="@dimen/zt_13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/pop_mobile_code"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pop_mobile_code" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/pop_btn_affirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/create_wallet_btn_bg_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/affirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/zt_14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

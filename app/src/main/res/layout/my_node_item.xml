@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mynode_bg"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:background="@mipmap/chuji">
+
+        <TextView
+            android:id="@+id/my_node_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/primary_node"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/node_ljsy_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/node_ljsy"
+            android:textColor="@color/zt_60fff"
+            android:textSize="@dimen/zt_12sp"
+            app:layout_constraintStart_toStartOf="@+id/my_node_class"
+            app:layout_constraintTop_toBottomOf="@+id/my_node_class" />
+
+        <TextView
+            android:id="@+id/node_ljsy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="1000"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/node_ljsy_lab"
+            app:layout_constraintTop_toBottomOf="@+id/node_ljsy_lab" />
+
+        <TextView
+            android:id="@+id/node_zrsy_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/node_zrsy"
+            android:textColor="@color/zt_60fff"
+            android:textSize="@dimen/zt_12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/node_ljsy_lab"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/node_zrsy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1000"
+            android:textColor="@color/zt_huang"
+            android:textSize="@dimen/zt_13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/node_ljsy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/node_jldq_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="27dp"
+            android:text="@string/node_jldq"
+            android:textColor="@color/zt_60fff"
+            android:textSize="@dimen/zt_12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/node_ljsy_lab"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/node_jldq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30天"
+            android:textColor="@color/zt_fff"
+            android:textSize="@dimen/zt_13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/node_ljsy"
+            app:layout_constraintEnd_toEndOf="@+id/node_jldq_lab" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

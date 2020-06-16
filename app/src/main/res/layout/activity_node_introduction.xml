@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".modules.dot.Node.NodeIntroductionActivity">
+
+    <include layout="@layout/title_project" />
+
+    <include layout="@layout/node_item_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/product_description"
+        android:textColor="@color/zt_1001a"
+        android:textSize="@dimen/zt_18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/product_description"
+        android:textColor="@color/zt_1001a"
+        android:textSize="@dimen/zt_13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/precautions"
+        android:textColor="@color/zt_1001a"
+        android:textSize="@dimen/zt_18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/precautions"
+        android:textColor="@color/zt_1001a"
+        android:textSize="@dimen/zt_13sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/node_add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_margin="22dp"
+        android:background="@drawable/bg_lu"
+        android:gravity="center"
+        android:text="@string/confirm_add"
+        android:textColor="@color/zt_fff"
+        android:textSize="@dimen/zt_15sp" />
+</LinearLayout>

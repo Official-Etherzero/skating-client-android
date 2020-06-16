@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".modules.user.VerifiedName.VerifiedNameActivity">
+
+    <include layout="@layout/title_project" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/verified_china_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/china_users_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="@string/china_users"
+            android:textColor="@color/zt_lu"
+            android:textSize="@dimen/zt_18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/china_users_hint"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/zt_red"
+        android:textSize="@dimen/zt_12sp" />
+
+    <LinearLayout
+        android:id="@+id/verified_other_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/other_users_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="@string/other_users"
+            android:textColor="@color/zt_lu"
+            android:textSize="@dimen/zt_18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
